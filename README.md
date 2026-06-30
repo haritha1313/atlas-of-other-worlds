@@ -43,6 +43,10 @@ npm test
 
 Both commands need Node 18 or newer. There are no packages to install.
 
+## Keeping the data fresh
+
+A GitHub Action in `.github/workflows/update-data.yml` runs once a week. It runs the build script to fetch the latest data from the archive, runs the test, and commits the new `index.html` only if the data changed. The live site then updates on its own. You can also start the job by hand from the Actions tab on GitHub.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
