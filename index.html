@@ -78,6 +78,10 @@
   .title p{margin:13px 0 0;color:var(--muted);font-size:12.5px;line-height:1.58;max-width:33ch}
   .countline{margin-top:14px;padding-top:13px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.01em}
   .countline b{color:var(--ink);font-weight:500}
+  .source{margin-top:13px;padding-top:13px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);line-height:1.5}
+  .source a{color:var(--accent);font-weight:500}
+  .source a:hover{text-decoration:underline}
+  .source .ack{display:block;margin-top:5px;font-size:10.5px;color:var(--quiet);line-height:1.5}
 
   /* controls */
   .controls{top:20px;left:50%;transform:translateX(-50%);
@@ -197,6 +201,10 @@
     <h1>Atlas of Other Worlds</h1>
     <p>Every planet humanity has confirmed beyond our Sun. Each point is a real, named world. Plot them, colour them, and play the timeline to watch us chart the galaxy.</p>
     <div class="countline"><b id="shownCount">0</b> worlds shown · <span id="subCount"></span></div>
+    <div class="source">
+      Data: <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener">NASA Exoplanet Archive</a>
+      <span class="ack">This work uses the NASA Exoplanet Archive, operated by the California Institute of Technology under contract with NASA's Exoplanet Exploration Program.</span>
+    </div>
   </header>
 
   <aside class="panel filters">
